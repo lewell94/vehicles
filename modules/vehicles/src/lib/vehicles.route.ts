@@ -9,7 +9,7 @@ import { provideHttpClient } from '@angular/common/http';
 export const vehiclesFeatureRoutes: Route[] = [
     {
         path: '',
-        loadComponent: () => import('./vehicles/vehicles.component').then(c => c.VehiclesComponent),
+        loadComponent: () => import('./components/vehicle-page/vehicle-page.component').then(c => c.VehiclePageComponent),
         providers: [
             provideHttpClient(),
             VehiclesData,

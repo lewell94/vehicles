@@ -1,16 +1,16 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { Observable } from "rxjs";
+import { VehicleBase, VehicleInfo } from "../models/vehicles.model";
 
 @Injectable()
 export class VehiclesData {
 
-    getVehicles(): Observable<any[]> {
-        return this.http.get<any[]>('https://frontend-code-test-api-jhbwml7vva-nw.a.run.app/api/vehicles/');
+    getVehicles() {
+        return this.http.get<VehicleBase[]>('https://frontend-code-test-api-jhbwml7vva-nw.a.run.app/api/vehicles/');
     }
 
-    getVehicleData(id: string): Observable<any> {
-        return this.http.get<any[]>(`https://frontend-code-test-api-jhbwml7vva-nw.a.run.app/api/vehicles/${id}`);
+    getVehicleData(id: string) {
+        return this.http.get<VehicleInfo>(`https://frontend-code-test-api-jhbwml7vva-nw.a.run.app/api/vehicles/${id}`);
     }
 
     constructor(private http: HttpClient) {}

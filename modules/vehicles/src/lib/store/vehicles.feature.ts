@@ -1,8 +1,9 @@
 import { createFeature, createReducer, on } from "@ngrx/store";
 import { VehiclesActions,  } from "./vehicles.actions";
+import { Vehicle } from "../models/vehicles.model";
 
 export interface VehiclesState {
-    vehicles: any;
+    vehicles: Vehicle[] | null;
 };
 
 export const initialState: VehiclesState = {

@@ -1,0 +1,15 @@
+<div class="vehicle">
+    <div class="vehicle__image">
+        <picture>
+            <source media="(min-width: 768px)" [srcset]="vehicle.media[0].url" />
+            <img [src]="vehicle.media[1].url" [alt]="vehicle.name" />
+        </picture>
+    </div>
+    <div class="vehicle__body" [ngClass]="{ 'vehicle__body--last': isLast }">
+        <h2 class="vehicle__name">{{ vehicle.name }}</h2>
+        @if (vehicle.price) {
+            <p  class="vehicle__price">From {{ vehicle.price }}</p>
+        }
+        <p class="vehicle__description">{{ vehicle.description }}</p>
+    </div>
+</div>

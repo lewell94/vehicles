@@ -1,0 +1,9 @@
+<div class="vehicles">
+    @for (vehicle of vehicles$ | async; track vehicle.id; let last = $last;) {
+        <lib-vehicle-card
+            class="vehicles__card"
+            [vehicle]="vehicle"
+            [isLast]="last"
+        ></lib-vehicle-card>
+    }
+</div>

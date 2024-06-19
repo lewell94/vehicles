@@ -1,0 +1,22 @@
+.vehicles {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 769px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        display: flex;
+
+        @media (min-width: 769px) {
+            flex: 50%;
+        }
+
+        @media (min-width: 1025px) {
+            flex: 25%;
+            flex-grow: 0;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.vehicle {
+    display: flex;
+    flex-grow: 1;
+
+    @media (min-width: 769px) {
+        flex-direction: column;
+    }
+
+    &__image {
+        max-width: 35%;
+
+        @media (min-width: 769px) {
+            max-width: 100%;
+        }
+
+        img {
+            display: block;
+            min-height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__body {
+        border-bottom: 2px solid #eeeeee;
+        display: flex;
+        font-size: 0.9rem;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: center;
+        padding: 1rem;
+
+        @media (min-width: 769px) {
+            border-left: 1px solid #eeeeee;
+            border-right: 1px solid #eeeeee;
+            text-align: center;
+
+            &--last {
+                border-right: 2px solid #eeeeee;
+            }
+        }
+    }
+
+    &__name {
+
+        @media (min-width: 769px) {
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            margin: 0 auto;
+            padding: 1px 0;
+        }
+    }
+
+    &__price {
+        color: #555;
+
+        @media (min-width: 769px) {
+            font-size: 0.85rem;
+            margin-top: 0.75rem;
+        }
+    }
+
+    &__description {
+        color: #555;
+        margin-top: 0.75rem;
+    }
+}
