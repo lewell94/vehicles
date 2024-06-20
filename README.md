@@ -1,3 +1,8 @@
+`nx serve` to run the app
+`nx run-many --all --target=test` to run unit tests
+`nx run-many --all --target=lint` to run lint
+`nx e2e e2e` to run e2e tests 
+
 # Storyteq
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
