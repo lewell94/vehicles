@@ -1,0 +1,82 @@
+[
+    {
+        "id": "xe",
+        "name": "JAGUAR XE",
+        "modelYear": "k17",
+        "apiUrl": "/api/vehicles/xe",
+        "media": [
+            {
+                "name": "vehicle",
+                "url": "/images/16x9/xe_k17.jpg"
+            },
+            {
+                "name": "vehicle",
+                "url": "/images/1x1/xe_k17.jpg"
+            }
+        ]
+    },
+    {
+        "id": "xf",
+        "name": "JAGUAR XF",
+        "modelYear": "k17",
+        "apiUrl": "/api/vehicles/xf",
+        "media": [
+            {
+                "name": "vehicle",
+                "url": "/images/16x9/xf_k17.jpg"
+            },
+            {
+                "name": "vehicle",
+                "url": "/images/1x1/xf_k17.jpg"
+            }
+        ]
+    },
+    {
+        "id": "xj",
+        "name": "JAGUAR XJ",
+        "modelYear": "k16",
+        "apiUrl": "/api/vehicles/xj",
+        "media": [
+            {
+                "name": "vehicle",
+                "url": "/images/16x9/xj_k16.jpg"
+            },
+            {
+                "name": "vehicle",
+                "url": "/images/1x1/xj_k16.jpg"
+            }
+        ]
+    },
+    {
+        "id": "fpace",
+        "name": "JAGUAR F-PACE",
+        "modelYear": "k17",
+        "apiUrl": "/api/vehicles/fpace",
+        "media": [
+            {
+                "name": "vehicle",
+                "url": "/images/16x9/fpace_k17.jpg"
+            },
+            {
+                "name": "vehicle",
+                "url": "/images/1x1/fpace_k17.jpg"
+            }
+        ]
+    },
+    {
+        "id": "problematic",
+        "name": "Problematic",
+        "modelYear": "k17",
+        "apiUrl": "/api/vehicles/problematic",
+        "media": [
+            {
+                "name": "vehicle",
+                "url": "/images/16x9/problematic_k17.jpg"
+            },
+            {
+                "name": "vehicle",
+                "url": "/images/1x1/problematic_k17.jpg"
+            }
+        ]
+    }
+]

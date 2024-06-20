@@ -22,7 +22,6 @@ export class VehiclePageComponent {
     constructor(private store: Store<VehiclesState>) {
         this.vehicles$ = this.store.select(vehiclesFeature.selectVehicles);
 
-        // todo - move to guard
         this.store.dispatch(VehiclesActions.getVehicles());
     }
 }
