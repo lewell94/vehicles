@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@storyteq/error": ["modules/error/src/index.ts"],
       "@storyteq/vehicles": ["modules/vehicles/src/index.ts"]
     }
   },
